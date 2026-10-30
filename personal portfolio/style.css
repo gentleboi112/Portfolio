@@ -1,0 +1,375 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: navy;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: yellow;
+}
+.logo span {
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: yellow;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,50,0.7), rgba(0,0,50,0.7)),
+              url('https://picsum.photos/1600/900?web') center/cover no-repeat;
+  color: white;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero h1 span {
+  color: yellow;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 12px 25px;
+  background: yellow;
+  color: navy;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: white;
+  color: navy;
+}
+
+/* Socials */
+.socials {
+  text-align: center;
+  padding: 50px 20px;
+}
+.socials h2 {
+  margin-bottom: 20px;
+}
+.icons a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: navy;
+  transition: 0.3s;
+}
+.icons a:hover {
+  color: yellow;
+}
+
+/* Footer */
+footer {
+  background: navy;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+/* About Page */
+.about {
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: navy;
+}
+.about-text h1 span {
+  color: yellow;
+}
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.skills {
+  list-style: none;
+  margin: 20px 0;
+}
+.skills li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+/* About Page */
+.about {
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: navy;
+}
+.about-text h1 span {
+  color: yellow;
+}
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.skills {
+  list-style: none;
+  margin: 20px 0;
+}
+.skills li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+/* Projects Page */
+.projects {
+  padding: 80px 10%;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: navy;
+}
+.project-header h1 span {
+  color: yellow;
+}
+.project-header p {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  color: navy;
+  margin-bottom: 10px;
+}
+.card-content p {
+  margin-bottom: 15px;
+  color: #555;
+}
+/* Testimonies Page */
+.testimonies {
+  padding: 80px 10%;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.testimonies-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: navy;
+}
+.testimonies-header h1 span {
+  color: yellow;
+}
+.testimonies-header p {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.testimonies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimony-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  transition: transform 0.3s;
+}
+.testimony-card:hover {
+  transform: translateY(-10px);
+}
+.testimony-card p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.testimony-card h3 {
+  color: navy;
+  font-weight: 600;
+}
+/* Contact Page */
+.contact {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: navy;
+}
+.contact-header h1 span {
+  color: yellow;
+}
+.contact-header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: navy;
+}
+.contact-form button {
+  background: yellow;
+  color: navy;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: navy;
+  color: white;
+}
+
+.contact-socials {
+  text-align: center;
+}
+.contact-socials h2 {
+  margin-bottom: 20px;
+  color: navy;
+}
+.contact-socials .icons a {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: navy;
+  transition: 0.3s;
+}
+.contact-socials .icons a:hover {
+  color: yellow;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
